@@ -3,7 +3,7 @@
 <div align="center">
     <br/>
 
-# Hello Rails React One App
+# Hello React Frontend
 
 </div>
 <!-- TABLE OF CONTENTS -->
@@ -14,7 +14,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-    <!-- - [🚀 Live Demo ](#-live-demo-) -->
+    - [Back End Link ](#-backend-) -->
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -29,9 +29,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Hello Rails React One App <a name="about-project"></a>
+# 📖 Hello React Frontend <a name="about-project"></a>
 
-**Hello Rails React One App** is a template demonstration with a simple API, on how to write a Full-Stack Web application with Frontend React JS and Backend Ruby on Rails
+**Hello React Frontend** is a template demonstration with a simple API, on how to write a Full-Stack Web application with Frontend React JS and Backend Ruby on Rails on two repos
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -40,11 +40,7 @@
 <details>
   <summary>Server</summary>
     <li><a href="https://www.ruby-lang.org/en/">React</a></li>
-    <li><a href="https://rubyonrails.org/">Rails</a></li>
-</details>
-<details>
-  <summary>Database</summary>
-    <li><a href="https://www.postgresql.org/">Postgres</a></li>
+    <li><a href="https://rubyonrails.org/">JavaScript</a></li>
 </details>
 
 <!-- Features -->
@@ -54,6 +50,9 @@
 - Shows a random Greeting to the user
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+### Backend Link <a name="backend"></a> 
+The backend of this Application can be found <a href="https://github.com/marvin-nyalik/Hello-Rails-Backend">in this repository</a>
 
 <!-- GETTING STARTED -->
 
@@ -66,10 +65,7 @@ To get a local copy up and running, follow these steps.
 In order to run this project you need:
 
 ```
-    ruby >= 3.2.0
     react > 16.3.2
-    rails >= 7.0
-    postgres >- 15.3
 ```
 
 ### Setup
@@ -77,58 +73,19 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```bash
-  git git@github.com:marvin-nyalik/Hello-Rails-React.git
+  git git@github.com:marvin-nyalik/Hello-React-Frontend.git
+
+  cd hello-react-frontend
+
+  npm start
 ```
-
-You need to setup database for these project
-
-```
-  development = hello_rails_react_app_dev
-  test        = hello_rails_react_app_test
-  production  = hello_rails_react_app_production
-```
-
-or you can use your own database and change the ```config/database.yml```
-
-```yml
-  default: &default
-    adapter: postgresql
-    encoding: unicode
-    pool: 5
-    username: [your_username]
-    password: [your_password]
-    host: localhost
-
-  development:
-    <<: *default
-    database: [your_database_for_development]
-
-  test:
-    <<: *default
-    database: [your_database_for_test]
-
-  production:
-    <<: *default
-    database: [your_database_for_production]
-```
-
-### Install
-
-Install this project with:
-
-```bash
-  cd BudgetApp
-  bundle install
-```
-
-it will install the required gems for running the project
 
 ### Usage
 
 to use this project:
 
-```ruby
-   rails server -p 3000
+```
+   npm start
 ```
 
 it will run the server on ```localhost:3000```
